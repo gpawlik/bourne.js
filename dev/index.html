@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Development Environment</title>
+
+		<meta name = "description" content = "A gesture based interface">
+		<meta name = "author" content = "Grzegorz Pawlik (http://gpawlik.com)">
+
+		<!-- include js -->
+		<script src="/src/bourne.js"></script>
+	</head>
+
+	<body>
+		<!-- run bourne.js to help me dev -->
+		<script type="text/javascript">
+			bourne.start();
+			bourne.options.debug(true);
+
+			bourne.options.subscribeWithCallback(function(gesture) {
+				console.log(gesture.direction);
+			});
+		</script>
+	</body>
+</html>
